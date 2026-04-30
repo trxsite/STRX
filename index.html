@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ffd700;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Willkommen auf meiner Website</h1>
+        <p>Eine einfache HTML Ein-Datei-Webseite</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Über mich</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <section id="home">
+        <div class="card">
+            <h2>Startseite</h2>
+            <p>Das ist eine moderne Beispiel-Website nur mit HTML & CSS.</p>
+            <button onclick="showMessage()">Klick mich</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="card">
+            <h2>Über mich</h2>
+            <p>Hier könnte dein Text stehen.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="card">
+            <h2>Kontakt</h2>
+            <p>Email: beispiel@email.de</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Meine Website
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Danke fürs Klicken!");
+        }
+    </script>
+
+</body>
+</html>
